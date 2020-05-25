@@ -57,8 +57,10 @@
     <script>
         document.title = "Raunaq Sharma";
         var tl = gsap.timeline();
-        tl.to('.rectangle1', { duration: 1, x: -700, delay: 1, ease: "expo.out" })
-        gsap.to('.rectangle2', { duration: 1, x: -550, delay: 1, ease: "sine.out" })
+        if(screen.width > 840) {
+            tl.to('.rectangle1', { duration: 1, x: -700, delay: 1, ease: "expo.out" })
+            gsap.to('.rectangle2', { duration: 1, x: -550, delay: 1, ease: "sine.out" })
+        }
     </script>
 
 
