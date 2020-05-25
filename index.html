@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+</head>
+
+<body data-barba="wrapper">
+
+    
+    <div id="particles-js">
+    <div id="bg"></div>
+    <!-- <header>
+        <a>Raunaq Sharma</a>
+    </header> -->
+    
+    <main>
+        
+        <div id="primary">
+            <h1 id="h1">Raunaq Sharma</h1>
+            <h3 id="h3">FullStack Developer</h3>
+        </div>
+
+        <div class="rectangle1"></div>
+        <div class="rectangle2"></div>
+
+        <!-- <img id="linkedin" src="/resources/LI-Logo.png" width="200px" height="70px"> -->
+        <div id="imageSocial">
+                <div><a href="https://www.linkedin.com/in/raunaqs1997/" target="_blank"><img id="linkedin" src="/resources/LI-Logo.png"></a>
+                </div> 
+                <div>
+                    <a href="https://github.com/rnqsharma" target="_blank">
+                           <img id="github" src="/resources/GitHub_Logo.png">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://drive.google.com/open?id=1lpEiW4sFs3NaiKPF-1URDEz2oj46Mig1" target="_blank">
+                        <img id="drive" src="/resources/googledrive.png">
+                    </a>
+                </div>
+         </div>
+    
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
+
+    <script>
+        var tl = gsap.timeline();
+        tl.to('.rectangle1', { duration: 3, x: -700, delay: 2, ease: "expo.out" })
+        gsap.to('.rectangle2', { duration: 4, x: -550, delay: 2, ease: "sine.out" })
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js">
+    </script>
+    <script src="particle.js">
+    </script>
+    </div>
+</body>
+
+</html>
