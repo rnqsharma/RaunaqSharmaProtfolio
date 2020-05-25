@@ -26,7 +26,7 @@ body div#particles-js {
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 @media (min-width: 840px) {
@@ -58,8 +58,8 @@ main div#imageSocial {
 }
 
 main div#imageSocial img#linkedin {
-  width: 160px;
-  height: 50px;
+  width: 180px;
+  height: 45px;
   position: relative;
   z-index: 9999;
 }
@@ -79,7 +79,7 @@ main div#imageSocial img#linkedin {
 main div#imageSocial img#github {
   margin-top: 30px;
   width: 150px;
-  height: 50px;
+  height: 60px;
   position: relative;
   z-index: 9999;
 }
