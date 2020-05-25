@@ -60,6 +60,17 @@
         if(screen.width > 840) {
             tl.to('.rectangle1', { duration: 1, x: -700, delay: 1, ease: "expo.out" })
             gsap.to('.rectangle2', { duration: 1, x: -550, delay: 1, ease: "sine.out" })
+
+            var tl2 = gsap.timeline()
+            tl2.fromTo('#linkedin', {x: 1000, y:0}, { duration: 1, x: 0, y: 0, delay: 0, ease: "expo.out" })
+            tl2.fromTo('#github', {x: 1000, y:0}, { duration: 0.8, x: 0, y: 0, delay: 0, ease: "expo.out" })
+            tl2.fromTo('#drive', {x: 1000, y:0}, { duration: 0.6, x: 0, y: 0, delay: 0, ease: "expo.out" })
+
+        } else {
+            var tl2 = gsap.timeline()
+            tl2.fromTo('#linkedin', {x: 0, y:600}, { duration: 1, x: 0, y: 0, delay: 0, ease: "expo.out" })
+            tl2.fromTo('#github', {x: 0, y:600}, { duration: 1, x: 0, y: 0, delay: 0, ease: "expo.out" })
+            tl2.fromTo('#drive', {x: 0, y:600}, { duration: 1, x: 0, y: 0, delay: 0, ease: "expo.out" })
         }
     </script>
 

@@ -76,6 +76,7 @@ main {
         left: 33%;
         display: inline-block;
         vertical-align: middle;
+        // background: url("../resources/LI-Logo.png");
 
         @include desktop {
             position: absolute;
@@ -84,6 +85,7 @@ main {
             left: 75%;
             display: inline-block;
             vertical-align: middle;    
+            // background-image: url(resources/LI-Logo.png);
         }
         img#linkedin{
 
