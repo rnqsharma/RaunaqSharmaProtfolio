@@ -42,7 +42,7 @@
                     </a>
                 </div>
                 <div>
-                    <a href="https://drive.google.com/open?id=1lpEiW4sFs3NaiKPF-1URDEz2oj46Mig1" target="_blank">
+                    <a href="https://drive.google.com/open?id=1iF4Y_RO9hKwQx6swQ2O1wHr8ELr_e__q" target="_blank">
                         <img id="drive" src="/resources/googledrive.png">
                     </a>
                 </div>
@@ -57,14 +57,25 @@
     <script>
         document.title = "Raunaq Sharma";
         var tl = gsap.timeline();
+        var x = 0;
         if(screen.width > 840) {
-            tl.to('.rectangle1', { duration: 1, x: -700, delay: 1, ease: "expo.out" })
-            gsap.to('.rectangle2', { duration: 1, x: -550, delay: 1, ease: "sine.out" })
+            if(x === 0 ) {
+                tl.to('.rectangle1', { duration: 1, x: -700, delay: 1, ease: "expo.out" })
+                gsap.to('.rectangle2', { duration: 1, x: -550, delay: 1, ease: "sine.out" })
+                x = 1;
+            }
+            
 
             var tl2 = gsap.timeline()
             tl2.fromTo('#linkedin', {x: 1000, y:0}, { duration: 1, x: 0, y: 0, delay: 0, ease: "expo.out" })
             tl2.fromTo('#github', {x: 1000, y:0}, { duration: 0.8, x: 0, y: 0, delay: 0, ease: "expo.out" })
             tl2.fromTo('#drive', {x: 1000, y:0}, { duration: 0.6, x: 0, y: 0, delay: 0, ease: "expo.out" })
+
+            // var tl3 = gsap.timeline();
+            
+            
+                // gsap.to('.rectangle2', { duration: 1, x: 100, delay: 1, ease: "sine.out" }) 
+            
 
         } else {
             var tl2 = gsap.timeline()
